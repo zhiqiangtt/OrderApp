@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.orderapp.Adapter.MydatabaseHelper;
-import com.example.orderapp.Login.loginActivity;
+import com.example.orderapp.Login.login;
 
 public class EditUser extends AppCompatActivity {
     private EditText pwd;
@@ -49,7 +49,7 @@ public class EditUser extends AppCompatActivity {
                 db.update("User",values,"name=?",new String[]{data});
                 values.clear();
                 Toast.makeText(EditUser.this,"修改成功",Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(EditUser.this,loginActivity.class);
+                Intent intent=new Intent(EditUser.this, login.class);
                 startActivity(intent);
             }
         });

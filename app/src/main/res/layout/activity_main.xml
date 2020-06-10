@@ -23,7 +23,7 @@ tools:context="com.example.orderapp.MainActivity">
     android:layout_above="@+id/btn1"
     android:layout_centerHorizontal="true"
     android:layout_marginBottom="188dp"
-    android:text="                        " />
+    android:text="欢迎使用点餐系统" />
 
 <Button
     android:id="@+id/btn1"
@@ -33,7 +33,6 @@ tools:context="com.example.orderapp.MainActivity">
     android:layout_marginBottom="42dp"
     android:layout_toLeftOf="@+id/text"
     android:layout_toStartOf="@+id/text"
-
     android:text="登录" />
 
 <Button
@@ -44,9 +43,5 @@ tools:context="com.example.orderapp.MainActivity">
     android:layout_toEndOf="@+id/text"
     android:layout_toRightOf="@+id/text"
     android:text="注册" />
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/btnload"
-    android:text="搭建环境"/>
+
 </RelativeLayout>

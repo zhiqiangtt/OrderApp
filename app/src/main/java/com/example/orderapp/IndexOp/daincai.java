@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+
 import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.RadioButton;
@@ -109,7 +110,7 @@ public class daincai extends AppCompatActivity implements View.OnClickListener {
 
                 li = LayoutInflater.from(this);
                 foodView= li.inflate(R.layout.order_dialog,null);
-                GridView foodtypeGdv=foodView.findViewById(R.id.foodTypeGdv);
+                GridView foodtypeGdv=(GridView) foodView.findViewById(R.id.foodTypeGdv);
                 numEdt=foodView.findViewById(R.id.numEdt);
                 initFoodTypeGv(foodtypeGdv);
 

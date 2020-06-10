@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(MainActivity.this,login.class);
+                Intent intent=new Intent(MainActivity.this, login.class);
                 startActivity(intent);
 
             }
@@ -35,16 +35,10 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,regist.class);
+                Intent intent=new Intent(MainActivity.this, regist.class);
                 startActivity(intent);
             }
         });
-        Button btnload=findViewById(R.id.btnload);
-        btnload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                LitePal.getDatabase();
-            }
-        });
+
     }
 }
